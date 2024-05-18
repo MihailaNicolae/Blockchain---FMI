@@ -4,11 +4,25 @@ const { ethers } = require("hardhat");
 async function interact() {
     [owner, user1] = await ethers.getSigners();
 
-    let propertyRegistryAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
-    let propertyRegistry = await ethers.getContractAt("PropertyRegistry", propertyRegistryAddress);
 
-    console.log("Successful!")
+    let propertyOwnershipRegistryAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+    let propertyOwnershipRegistry = await ethers.getContractAt("PropertyOwnershipRegistry", propertyOwnershipRegistryAddress);
 
+
+    //let count = await propertyOwnershipRegistry.getPropertyCount();
+
+    //console.log(count);
+
+    try {
+        // Call the contract method
+        const count = await propertyOwnershipRegistry.getPropertyCount();
+        console.log("Property Count: ", count.toString());
+      } catch (error) {
+        console.error("Error: ", error);
+      }
+
+
+    console.log("Successful!");
 
 }
 
