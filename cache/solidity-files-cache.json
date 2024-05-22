@@ -1,0 +1,115 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/andrei/Desktop/blockchain/Proiect_Blockchain2.01/Blockchain---FMI/contracts/Property.sol": {
+      "lastModificationDate": 1716417323305,
+      "contentHash": "debf6998411f5cb76ea3aec56776836b",
+      "sourceName": "contracts/Property.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Property"
+      ]
+    },
+    "/home/andrei/Desktop/blockchain/Proiect_Blockchain2.01/Blockchain---FMI/contracts/PropertyOwnershipRegistry.sol": {
+      "lastModificationDate": 1716417385360,
+      "contentHash": "37866000523d5bbe374652acb4ae7a87",
+      "sourceName": "contracts/PropertyOwnershipRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Property.sol",
+        "./Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PropertyOwnershipRegistry"
+      ]
+    },
+    "/home/andrei/Desktop/blockchain/Proiect_Blockchain2.01/Blockchain---FMI/contracts/Utils.sol": {
+      "lastModificationDate": 1716416849126,
+      "contentHash": "a23da7b2c75a2196ae6d87bfd2c5df83",
+      "sourceName": "contracts/Utils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Utils"
+      ]
+    }
+  }
+}
